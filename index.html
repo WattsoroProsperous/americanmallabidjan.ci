@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="American Brands Mall Abidjan - Découvrez notre Mall des marques américaines à Abidjan ! Vêtements, accessoires, détergents, produits de marché… tout en qualité originale et à prix incroyables.">
+    <meta name="keywords" content="American Mall, Abidjan, vêtements américains, Nike, Columbia, marques USA, shopping Abidjan">
+    <title>American Brands Mall Abidjan | 100% USA Style</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <img src="assets/logo.jpg" alt="American Brands Mall Logo" class="loader-logo">
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Chargement en cours...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.jpg" alt="American Brands Mall">
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#horaires" class="nav-link">Horaires</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <video autoplay muted loop playsinline class="hero-video" id="hero-video">
+            <source src="assets/hero bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">American</span>
+                <span class="title-line accent">Brands Mall</span>
+                <span class="title-line small">Abidjan</span>
+            </h1>
+            <p class="hero-subtitle">We Dress Tomorrow</p>
+            <p class="hero-tagline">Elegance, Great Deals, Infinite Future</p>
+            <div class="hero-cta">
+                <a href="#collections" class="btn btn-primary">Découvrir nos Collections</a>
+                <a href="#contact" class="btn btn-outline">Nous Contacter</a>
+            </div>
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <span>5.0 sur Google</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Défiler</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">À Propos</span>
+                <h2 class="section-title">Votre Destination <span class="accent">100% USA</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-video">
+                    <video autoplay muted loop playsinline class="about-video-player" data-lazy-video>
+                        <source data-src="assets/about us.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-badge">
+                        <i class="fas fa-play"></i>
+                        <span>Découvrez notre Mall</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Bienvenue chez American Brands Mall</h3>
+                    <p>Découvrez notre Mall des marques américaines à Abidjan ! Vêtements, accessoires, détergents, produits de marché… tout en qualité originale et à prix incroyables.</p>
+                    <p>Venez nous visiter et adoptez le style 100% USA. Nous vous proposons les meilleures marques américaines avec des réductions allant jusqu'à 30% sur les prix de détail.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>100% Authentique</h4>
+                                <p>Produits originaux garantis</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Prix Imbattables</h4>
+                                <p>Jusqu'à -30% du prix retail</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Import Direct USA</h4>
+                                <p>Nouveautés régulières</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <img src="assets/bannière.jpg" alt="American Brands Mall - We Dress Tomorrow" class="banner-img" data-lazy>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos Produits</span>
+                <h2 class="section-title">Découvrez nos <span class="accent">Collections</span></h2>
+            </div>
+
+            <!-- Collection Filter -->
+            <div class="collection-filter">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="shoes">Chaussures</button>
+                <button class="filter-btn" data-filter="clothing">Vêtements</button>
+                <button class="filter-btn" data-filter="cosmetics">Cosmétiques</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Nike Shoes Collection -->
+                <div class="product-card" data-category="shoes">
+                    <div class="product-image">
+                        <img data-src="assets/shoes nike collection/573334334_122108083467047897_4355148438011556051_n.jpg" alt="Collection Chaussures Rockport" class="lazy">
+                        <div class="product-badge">Nouveau</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chaussures</span>
+                        <h3>Rockport Collection</h3>
+                        <p>-30% du prix retail</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes">
+                    <div class="product-image">
+                        <img data-src="assets/shoes nike collection/571477506_122108083449047897_5997282515149650434_n.jpg" alt="Chaussures Nike" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chaussures</span>
+                        <h3>Nike Collection</h3>
+                        <p>À partir de 50 000 F</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes">
+                    <div class="product-image">
+                        <img data-src="assets/shoes nike collection/571152028_122108083443047897_6250801601922983391_n.jpg" alt="Sneakers Nike" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chaussures</span>
+                        <h3>Nike Sneakers</h3>
+                        <p>Style & Confort</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes">
+                    <div class="product-image">
+                        <img data-src="assets/shoes nike collection/573351642_122108083473047897_8270498600482311834_n.jpg" alt="Nike Air" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chaussures</span>
+                        <h3>Nike Air</h3>
+                        <p>Performance USA</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes">
+                    <div class="product-image">
+                        <img data-src="assets/shoes nike collection/571202882_122108091813047897_5765539372498157988_n.jpg" alt="Baskets Nike" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chaussures</span>
+                        <h3>Nike Baskets</h3>
+                        <p>Tendance 2024</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes">
+                    <div class="product-image">
+                        <img data-src="assets/shoes nike collection/571160745_122108091777047897_5891856637684966630_n.jpg" alt="Nike Sport" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chaussures</span>
+                        <h3>Nike Sport</h3>
+                        <p>Qualité Premium</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes">
+                    <div class="product-image">
+                        <img data-src="assets/shoes nike collection/570615615_122108091753047897_7676268527479432030_n.jpg" alt="Nike Lifestyle" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Chaussures</span>
+                        <h3>Nike Lifestyle</h3>
+                        <p>Confort au quotidien</p>
+                    </div>
+                </div>
+
+                <!-- Columbia Collection -->
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img data-src="assets/columbia collection/571557189_122108091027047897_3663472537768207331_n.jpg" alt="T-Shirt Columbia" class="lazy">
+                        <div class="product-badge">Populaire</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vêtements</span>
+                        <h3>Columbia T-Shirt</h3>
+                        <p>Minimalist, Bold, Effortless</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img data-src="assets/columbia collection/571788520_122108091015047897_3658890455623528025_n.jpg" alt="Columbia Collection" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vêtements</span>
+                        <h3>Columbia Style</h3>
+                        <p>Mode Outdoor</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img data-src="assets/columbia collection/571188177_122108090973047897_544618113088130101_n.jpg" alt="Columbia Outdoor" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vêtements</span>
+                        <h3>Columbia Outdoor</h3>
+                        <p>Adventure Ready</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img data-src="assets/columbia collection/572478789_122108090961047897_1769553422843350166_n.jpg" alt="Columbia Sportswear" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vêtements</span>
+                        <h3>Columbia Sportswear</h3>
+                        <p>Performance & Style</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img data-src="assets/columbia collection/571285918_122108090937047897_718871726319521973_n.jpg" alt="Columbia Premium" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vêtements</span>
+                        <h3>Columbia Premium</h3>
+                        <p>Qualité Supérieure</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img data-src="assets/columbia collection/570616698_122108090883047897_4055484361984708199_n.jpg" alt="Columbia Classic" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vêtements</span>
+                        <h3>Columbia Classic</h3>
+                        <p>Intemporel</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img data-src="assets/columbia collection/571139455_122108090829047897_9032077922069210328_n.jpg" alt="Columbia Essentials" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vêtements</span>
+                        <h3>Columbia Essentials</h3>
+                        <p>Must-Have</p>
+                    </div>
+                </div>
+
+                <!-- Soft Skin / Cosmetics -->
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-image">
+                        <img data-src="assets/pommade soft skin/570600421_122108089905047897_8187215092200985406_n.jpg" alt="Secret Deodorant" class="lazy">
+                        <div class="product-badge sale">Promo</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cosmétiques</span>
+                        <h3>Secret Deodorant</h3>
+                        <p>Trusted Protection</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-image">
+                        <img data-src="assets/pommade soft skin/571035225_122108089863047897_7167951163626751867_n.jpg" alt="Soft Skin Products" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cosmétiques</span>
+                        <h3>Soft Skin Collection</h3>
+                        <p>Soin Premium</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-image">
+                        <img data-src="assets/pommade soft skin/571142080_122108089869047897_4974922061265783389_n.jpg" alt="Beauty Care" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cosmétiques</span>
+                        <h3>Beauty Care</h3>
+                        <p>Qualité USA</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-image">
+                        <img data-src="assets/pommade soft skin/572959764_122108089929047897_6961388449567636088_n.jpg" alt="Skin Care" class="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cosmétiques</span>
+                        <h3>Skin Care</h3>
+                        <p>Naturel & Efficace</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="video-showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">En Vidéo</span>
+                <h2 class="section-title">Explorez <span class="accent">Notre Univers</span></h2>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <video muted loop playsinline class="showcase-video" data-lazy-video>
+                        <source data-src="assets/Venez nous rendre visite à American Mall et explorez nos articles 100% USA !.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-btn" aria-label="Play video">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <h3>Découvrez nos Articles 100% USA</h3>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <video muted loop playsinline class="showcase-video" data-lazy-video>
+                        <source data-src="assets/Nouveautés disponibles au American Brands Mall Abidjan à partir 50000 f.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-btn" aria-label="Play video">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <h3>Nouveautés à partir de 50 000 F</h3>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <video muted loop playsinline class="showcase-video" data-lazy-video>
+                        <source data-src="assets/enfant homme femme à partir de 50 000 ff.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-btn" aria-label="Play video">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <h3>Enfant, Homme, Femme</h3>
+                    </div>
+                </div>
+                <div class="video-card featured">
+                    <video muted loop playsinline class="showcase-video" data-lazy-video>
+                        <source data-src="assets/robe de soirée à partir de 80 000 f.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-btn" aria-label="Play video">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <h3>Robes de Soirée à partir de 80 000 F</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="horaires" class="schedule">
+        <div class="container">
+            <div class="schedule-grid">
+                <div class="schedule-info">
+                    <div class="section-header left">
+                        <span class="section-tag">Horaires</span>
+                        <h2 class="section-title">Nous Sommes <span class="accent">Ouverts</span></h2>
+                    </div>
+                    <p class="schedule-desc">Venez nous rendre visite tous les jours de la semaine. Notre équipe vous accueille avec le sourire !</p>
+                    <div class="schedule-table">
+                        <div class="schedule-row">
+                            <span class="day">Lundi</span>
+                            <span class="hours">08:30 - 21:00</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="day">Mardi</span>
+                            <span class="hours">08:30 - 21:00</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="day">Mercredi</span>
+                            <span class="hours">08:30 - 21:00</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="day">Jeudi</span>
+                            <span class="hours">08:30 - 21:00</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="day">Vendredi</span>
+                            <span class="hours">08:30 - 21:00</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="day">Samedi</span>
+                            <span class="hours">08:30 - 21:00</span>
+                        </div>
+                        <div class="schedule-row highlight">
+                            <span class="day">Dimanche</span>
+                            <span class="hours">08:30 - 21:00</span>
+                        </div>
+                    </div>
+                    <p class="open-status"><i class="fas fa-clock"></i> <span id="open-status">Vérification...</span></p>
+                </div>
+                <div class="schedule-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.5!2d-3.9884903!3d5.300518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eb002e7623f5%3A0xbae402024e3edd30!2sAmerican%20Brands%20Mall!5e0!3m2!1sfr!2sci!4v1703000000000!5m2!1sfr!2sci"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Restons en <span class="accent">Contact</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adresse</h3>
+                    <p>Grand Carrefour de Marcory<br>Immeuble Diamond Ivoire<br>Abidjan, Côte d'Ivoire</p>
+                    <a href="https://www.google.com/maps/place/American+Brands+Mall/@5.300518,-3.9884903,17z" target="_blank" class="contact-link">
+                        <i class="fas fa-directions"></i> Itinéraire
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p>Appelez-nous pour toute information</p>
+                    <a href="tel:+2250716060606" class="contact-link">
+                        <i class="fas fa-phone"></i> 07 16 06 06 06
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Écrivez-nous pour plus d'infos</p>
+                    <a href="mailto:direction@nougatinepatisseriefine.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> Envoyer un email
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Suivez nos dernières nouveautés</p>
+                    <a href="https://www.instagram.com/americanmallabidjan/" target="_blank" class="contact-link">
+                        <i class="fab fa-instagram"></i> @americanmallabidjan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à Adopter le Style USA ?</h2>
+                <p>Venez découvrir notre Mall et profitez de prix exceptionnels sur les plus grandes marques américaines.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+2250716060606" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i> Appelez-nous
+                    </a>
+                    <a href="https://www.instagram.com/americanmallabidjan/" target="_blank" class="btn btn-outline btn-lg">
+                        <i class="fab fa-instagram"></i> Suivez-nous
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo.jpg" alt="American Brands Mall" class="footer-logo">
+                    <p>Votre destination pour les meilleures marques américaines à Abidjan. Qualité originale, prix imbattables.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/americanmallabidjan/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="tel:+2250716060606" aria-label="Téléphone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:direction@nougatinepatisseriefine.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#horaires">Horaires</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="#collections">Chaussures Nike</a></li>
+                        <li><a href="#collections">Vêtements Columbia</a></li>
+                        <li><a href="#collections">Cosmétiques</a></li>
+                        <li><a href="#collections">Robes de Soirée</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Grand Carrefour de Marcory, Abidjan</p>
+                    <p><i class="fas fa-phone"></i> 07 16 06 06 06</p>
+                    <p><i class="fas fa-clock"></i> Ouvert 7j/7 : 08:30 - 21:00</p>
+                    <div class="google-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>5.0 sur Google</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 American Brands Mall Abidjan. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Christmas Popup -->
+    <div id="christmas-popup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close" id="popup-close">&times;</button>
+            <video autoplay muted loop playsinline class="popup-video">
+                <source src="assets/pop up add happy christmass.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -399,16 +399,23 @@ function initChristmasPopup() {
 
     if (!popup || !closeBtn) return;
 
-    // Check if popup was already shown this session
-    const popupShown = sessionStorage.getItem('christmasPopupShown');
+    let popupShown = false;
 
-    if (!popupShown) {
-        // Show popup after 3 seconds
-        setTimeout(() => {
+    // Show popup on scroll (once per page load)
+    function showPopupOnScroll() {
+        if (popupShown) return;
+
+        // Show popup after scrolling 300px
+        if (window.scrollY > 300) {
             popup.classList.add('active');
-            sessionStorage.setItem('christmasPopupShown', 'true');
-        }, 3000);
+            popupShown = true;
+            // Remove scroll listener once shown
+            window.removeEventListener('scroll', showPopupOnScroll);
+        }
     }
+
+    // Add scroll listener
+    window.addEventListener('scroll', showPopupOnScroll);
 
     // Close popup
     closeBtn.addEventListener('click', () => {

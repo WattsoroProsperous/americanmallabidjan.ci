@@ -11,17 +11,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" id="main-css">
+    <script>document.getElementById('main-css').href = 'styles.css?t=' + Date.now();</script>
 </head>
 <body>
     <!-- Loader Screen -->
     <div id="loader" class="loader">
         <div class="loader-content">
             <img src="assets/logo.jpg" alt="American Brands Mall Logo" class="loader-logo">
+            <div class="loader-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
             <div class="loader-bar">
                 <div class="loader-progress"></div>
             </div>
             <p class="loader-text">Chargement en cours...</p>
+            <p class="loader-tagline">We Dress Tomorrow</p>
         </div>
     </div>
 
@@ -366,50 +375,59 @@
             <div class="section-header">
                 <span class="section-tag">En Vidéo</span>
                 <h2 class="section-title">Explorez <span class="accent">Notre Univers</span></h2>
+                <p>Plongez dans l'ambiance American Brands Mall et découvrez nos collections en vidéo</p>
             </div>
             <div class="video-grid">
                 <div class="video-card">
                     <video muted loop playsinline class="showcase-video" data-lazy-video>
-                        <source data-src="assets/Venez nous rendre visite à American Mall et explorez nos articles 100% USA !.mp4" type="video/mp4">
+                        <source data-src="assets/Venez%20nous%20rendre%20visite%20%C3%A0%20American%20Mall%20et%20explorez%20nos%20articles%20100%25%20USA.mp4" type="video/mp4">
                     </video>
                     <div class="video-overlay">
                         <button class="play-btn" aria-label="Play video">
                             <i class="fas fa-play"></i>
                         </button>
+                        <span class="video-card-tag">Visite</span>
                         <h3>Découvrez nos Articles 100% USA</h3>
+                        <span class="video-duration"><i class="fas fa-clock"></i> Vidéo immersive</span>
                     </div>
                 </div>
                 <div class="video-card">
                     <video muted loop playsinline class="showcase-video" data-lazy-video>
-                        <source data-src="assets/Nouveautés disponibles au American Brands Mall Abidjan à partir 50000 f.mp4" type="video/mp4">
+                        <source data-src="assets/Nouveaut%C3%A9s%20disponibles%20au%20American%20Brands%20Mall%20Abidjan%20%C3%A0%20partir%2050000%20f.mp4" type="video/mp4">
                     </video>
                     <div class="video-overlay">
                         <button class="play-btn" aria-label="Play video">
                             <i class="fas fa-play"></i>
                         </button>
+                        <span class="video-card-tag">Nouveautés</span>
                         <h3>Nouveautés à partir de 50 000 F</h3>
+                        <span class="video-duration"><i class="fas fa-tag"></i> Prix imbattables</span>
                     </div>
                 </div>
                 <div class="video-card">
                     <video muted loop playsinline class="showcase-video" data-lazy-video>
-                        <source data-src="assets/enfant homme femme à partir de 50 000 ff.mp4" type="video/mp4">
+                        <source data-src="assets/enfant%20homme%20femme%20%C3%A0%20partir%20de%2050%20000%20ff.mp4" type="video/mp4">
                     </video>
                     <div class="video-overlay">
                         <button class="play-btn" aria-label="Play video">
                             <i class="fas fa-play"></i>
                         </button>
+                        <span class="video-card-tag">Famille</span>
                         <h3>Enfant, Homme, Femme</h3>
+                        <span class="video-duration"><i class="fas fa-users"></i> Pour toute la famille</span>
                     </div>
                 </div>
                 <div class="video-card featured">
                     <video muted loop playsinline class="showcase-video" data-lazy-video>
-                        <source data-src="assets/robe de soirée à partir de 80 000 f.mp4" type="video/mp4">
+                        <source data-src="assets/robe%20de%20soir%C3%A9e%20%C3%A0%20partir%20de%2080%20000%20f.mp4" type="video/mp4">
                     </video>
                     <div class="video-overlay">
                         <button class="play-btn" aria-label="Play video">
                             <i class="fas fa-play"></i>
                         </button>
+                        <span class="video-card-tag">Élégance</span>
                         <h3>Robes de Soirée à partir de 80 000 F</h3>
+                        <span class="video-duration"><i class="fas fa-gem"></i> Collection Premium</span>
                     </div>
                 </div>
             </div>
@@ -619,6 +637,6 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script>document.write('<script src="script.js?t=' + Date.now() + '"><\/script>');</script>
 </body>
 </html>
